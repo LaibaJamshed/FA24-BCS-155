@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfitters | Home</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- header -->
+
+<header class="site-nav nav-overlay">
+    <nav class="navbar navbar-expand">
+        <div class="container-fluid">
+
+            <div class="nav-side">
+                <details class="nav-menu">
+                    <summary aria-label="Menu"><i class="bi bi-list"></i></summary>
+                    <div class="nav-menu-panel">
+                        <a href="index.html">MEN</a>
+                        <a href="index.html">WOMEN</a>
+                        <a href="index.html">JUNIORS</a>
+                    </div>
+                </details>
+
+                <a class="navbar-brand m-0" href="index.html">
+                    <img src="images/logo1.png" class="logo" alt="Outfitters logo">
+                </a>
+            </div>
+
+            <ul class="navbar-nav d-none d-md-flex">
+                <li class="nav-item"><a class="nav-link" href="index.html">MEN</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">WOMEN</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">JUNIORS</a></li>
+            </ul>
+
+            <div class="nav-side nav-side-end">
+                <a href="#" class="nav-icon d-none d-md-flex">
+                    <i class="bi bi-search"></i><span>Search</span>
+                </a>
+                <a href="#" class="nav-icon d-md-none" aria-label="Search"><i class="bi bi-search"></i></a>
+                <a href="#" class="nav-icon" aria-label="Account"><i class="bi bi-person"></i></a>
+                <a href="#" class="nav-icon" aria-label="Shopping bag"><i class="bi bi-bag"></i></a>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+
+<!-- hero -->
+
+<section class="hero">
+
+    <!-- hero carousel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <!-- slide 1 -->
+            <div class="carousel-item active">
+                <img src="images/backgroun2.webp" class="d-block w-100" alt="Season Preview collection">
+                <div class="hero-caption"><h1>Season Preview F/W 26-27</h1></div>
+            </div>
+
+            <!-- slide 2 -->
+            <div class="carousel-item">
+                <video class="d-block w-100" autoplay muted loop playsinline aria-label="Autumn winter fashion video">
+                    <source src="images/slider2.mp4" type="video/mp4">
+                </video>
+                <div class="hero-caption"><h1>FW 2026-2027</h1></div>
+            </div>
+
+            <!-- slide 3 -->
+            <div class="carousel-item">
+                <video class="d-block w-100" autoplay muted loop playsinline aria-label="Fashion collection video">
+                    <source src="images/slider3.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- slide 4 -->
+            <div class="carousel-item">
+                <video class="d-block w-100" autoplay muted loop playsinline aria-label="Sweats collection video">
+                    <source src="images/slider.mp4" type="video/mp4">
+                </video>
+                <div class="hero-caption"><h1>SWEATS FW 2026-2027</h1></div>
+            </div>
+
+        </div>
+
+        <!-- indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- category strip -->
+
+<section class="category-strip" aria-label="Shop by category">
+    <a href="#" class="category-card"><img src="images/tshirt.jpg" alt="T-shirts"><h3>T-SHIRTS</h3></a>
+    <a href="#" class="category-card"><img src="images/polo.webp" alt="Polos"><h3>POLOS</h3></a>
+    <a href="#" class="category-card"><img src="images/shirts.webp" alt="Shirts"><h3>SHIRTS</h3></a>
+    <a href="#" class="category-card"><img src="images/active-wear.webp" alt="Activewear"><h3>ACTIVEWEAR</h3></a>
+    <a href="#" class="category-card"><img src="images/denim.webp" alt="Denim"><h3>DENIM</h3></a>
+    <a href="#" class="category-card"><img src="images/trouser.webp" alt="Trousers"><h3>TROUSERS</h3></a>
+    <a href="#" class="category-card"><img src="images/shirts.webp" alt="Shorts"><h3>SHORTS</h3></a>
+    <a href="#" class="category-card"><img src="images/sweatshirt.webp" alt="Sweatshirts"><h3>SWEATSHIRTS</h3></a>
+    <a href="#" class="category-card"><img src="images/out-wear.webp" alt="Outerwear"><h3>OUTERWEAR</h3></a>
+</section>
+
+
+<!-- categories in focus -->
+
+<section class="py-4 py-md-5">
+    <div class="container-fluid px-0">
+        <div class="row g-0">
+
+            <div class="col-12 col-lg-4">
+                <img src="images/focus-category.webp" class="focus-img" alt="Categories in Focus">
+            </div>
+
+            <div class="col-12 col-lg-8 px-3 px-md-4 pt-4 pt-lg-0">
+                <h2 class="mb-4">Categories in Focus</h2>
+
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <article class="product-card">
+                            <a href="product.html"><img src="images/sweatshirt1.webp" alt="Black quarter zip sweatshirt"></a>
+                            <h3>Quarter Zip Up Sweatshirt</h3>
+                            <p class="meta">Regular Fit | Men</p>
+                            <p class="price">PKR 5,990</p>
+                            <div class="swatches"><span class="swatch jet-black"></span></div>
+                            <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="product-card">
+                            <a href="product.html"><img src="images/sweatshirt2.webp" alt="Beige quarter zip sweatshirt"></a>
+                            <h3>Quarter Zip Up Sweatshirt</h3>
+                            <p class="meta">Regular Fit | Men</p>
+                            <p class="price">PKR 5,990</p>
+                            <div class="swatches"><span class="swatch yellow-beige"></span></div>
+                            <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="product-card">
+                            <a href="product.html"><img src="images/sweatshirt3.webp" alt="Dusty mauve quarter zip sweatshirt"></a>
+                            <h3>Quarter Zip Up Sweatshirt</h3>
+                            <p class="meta">Regular Fit | Men</p>
+                            <p class="price">PKR 5,990</p>
+                            <div class="swatches"><span class="swatch dusty-mauve"></span></div>
+                            <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="product-card">
+                            <a href="product.html"><img src="images/sweatshirt4.webp" alt="Brown quarter zip sweatshirt"></a>
+                            <h3>Quarter Zip Up Sweatshirt</h3>
+                            <p class="meta">Regular Fit | Men</p>
+                            <p class="price">PKR 5,990</p>
+                            <div class="swatches"><span class="swatch brown"></span></div>
+                            <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="product-card">
+                            <a href="product.html"><img src="images/sweatshirt5.jpg" alt="Beige sweatshirt"></a>
+                            <h3>Quarter Zip Up Sweatshirt</h3>
+                            <p class="meta">Regular Fit | Men</p>
+                            <p class="price">PKR 5,990</p>
+                            <div class="swatches"><span class="swatch beige"></span></div>
+                            <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="product-card">
+                            <a href="product.html"><img src="images/sweatshirt6.webp" alt="Grey blue sweatshirt"></a>
+                            <h3>Quarter Zip Up Sweatshirt</h3>
+                            <p class="meta">Regular Fit | Men</p>
+                            <p class="price">PKR 5,990</p>
+                            <div class="swatches"><span class="swatch grey-blue"></span></div>
+                            <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                        </article>
+                    </div>
+
+                </div>
+
+                <p class="mt-4 mb-0"><a href="#" class="view-all">VIEW ALL COLLECTION <span>&#10230;</span></a></p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- new denim drop -->
+
+<section class="section-head text-center">
+    <h2>New Denim Drop</h2>
+    <p>New fits and fresh washes to switch up your rotation.</p>
+    <a href="#" class="view-all">View All <span>&#10230;</span></a>
+</section>
+
+<section class="banner">
+    <img src="images/denimbanner.jpeg" alt="New Denim Collection">
+</section>
+
+<section class="container-fluid px-3 px-md-4 py-4 py-md-5">
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+
+        <div class="col">
+            <article class="product-card">
+                <a href="product.html"><img src="images/denim1.webp" alt="Balloon fit jeans"></a>
+                <h3>Balloon Fit Jeans</h3>
+                <p class="meta">Balloon Fit | Men</p>
+                <p class="price">PKR 6,990</p>
+                <div class="swatches">
+                    <span class="swatch navy"></span><span class="swatch grey"></span><span class="swatch black"></span>
+                </div>
+                <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+            </article>
+        </div>
+
+        <div class="col">
+            <article class="product-card">
+                <a href="product.html"><img src="images/denim2.webp" alt="Balloon fit jeans"></a>
+                <h3>Balloon Fit Jeans</h3>
+                <p class="meta">Balloon Fit | Men</p>
+                <p class="price">PKR 6,990</p>
+                <div class="swatches">
+                    <span class="swatch dark-blue"></span><span class="swatch navy"></span>
+                    <span class="swatch black"></span><span class="swatch grey"></span>
+                </div>
+                <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+            </article>
+        </div>
+
+        <div class="col">
+            <article class="product-card">
+                <a href="product.html"><img src="images/denim3.webp" alt="Straight fit carpenter jeans"></a>
+                <h3>Straight Fit Carpenter Jeans</h3>
+                <p class="meta">Straight Fit | Men</p>
+                <p class="price">PKR 6,990</p>
+                <div class="swatches">
+                    <span class="swatch navy"></span><span class="swatch grey"></span><span class="swatch black"></span>
+                </div>
+                <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+            </article>
+        </div>
+
+        <div class="col">
+            <article class="product-card">
+                <a href="product.html"><img src="images/denim 4.webp" alt="Straight fit carpenter jeans"></a>
+                <h3>Straight Fit Carpenter Jeans</h3>
+                <p class="meta">Straight Fit | Men</p>
+                <p class="price">PKR 7,990</p>
+                <div class="swatches"><span class="swatch dark-blue"></span></div>
+                <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+            </article>
+        </div>
+
+        <div class="col">
+            <article class="product-card">
+                <a href="product.html"><img src="images/denim 5.webp" alt="Straight fit jeans"></a>
+                <h3>Straight Fit Jeans</h3>
+                <p class="meta">Straight Fit | Men</p>
+                <p class="price">PKR 5,990</p>
+                <div class="swatches"><span class="swatch black"></span></div>
+                <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+            </article>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- shop the mood -->
+
+<section class="py-4 py-md-5">
+
+    <div class="section-head text-center pt-0">
+        <h2>Shop The Mood</h2>
+        <p>Dress for the mood you’re in. Explore curated looks made for every kind of day.</p>
+    </div>
+
+    <div class="container-fluid px-3 px-md-4">
+        <div class="row g-3">
+            <div class="col-12 col-md-6">
+                <a href="#" class="mood-card">
+                    <img src="images/offduty.webp" alt="Off Duty Style">
+                    <span>Off Duty</span>
+                </a>
+            </div>
+            <div class="col-12 col-md-6">
+                <a href="#" class="mood-card">
+                    <img src="images/firstlayer.webp" alt="First Layers Style">
+                    <span>First Layers</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- footwear -->
+
+<section>
+
+    <div class="section-head">
+        <h2>Footwear</h2>
+        <p class="mb-3">Your go-to footwear for every look</p>
+        <a href="#" class="view-all">View All <span>&#10230;</span></a>
+    </div>
+
+    <div class="banner">
+        <img src="images/footwearbanner.jpeg" alt="Footwear Collection">
+    </div>
+
+    <div class="container-fluid px-3 px-md-4 py-4 py-md-5">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+
+            <div class="col">
+                <article class="product-card">
+                    <a href="product.html"><img src="images/shoe1.webp" alt="Multi-piece sneakers"></a>
+                    <h3>Multi-Piece Sneakers</h3>
+                    <p class="meta">Men</p>
+                    <p class="price">PKR 9,990</p>
+                    <div class="swatches"><span class="swatch shoe-white"></span><span class="swatch shoe-black"></span></div>
+                    <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                </article>
+            </div>
+
+            <div class="col">
+                <article class="product-card">
+                    <a href="product.html"><img src="images/shoe2.webp" alt="Multi-piece sneakers"></a>
+                    <h3>Multi-Piece Sneakers</h3>
+                    <p class="meta">Men</p>
+                    <p class="price">PKR 9,990</p>
+                    <div class="swatches"><span class="swatch shoe-beige"></span><span class="swatch shoe-black"></span></div>
+                    <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                </article>
+            </div>
+
+            <div class="col">
+                <article class="product-card">
+                    <a href="product.html"><img src="images/shoe3.webp" alt="Casual sneakers"></a>
+                    <h3>Casual Sneakers</h3>
+                    <p class="meta">Men</p>
+                    <p class="price">PKR 9,990</p>
+                    <div class="swatches"><span class="swatch shoe-white"></span><span class="swatch shoe-grey"></span></div>
+                    <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                </article>
+            </div>
+
+            <div class="col">
+                <article class="product-card">
+                    <a href="product.html"><img src="images/shoe4.webp" alt="Suede moc-toe shoes"></a>
+                    <h3>Suede Moc-Toe Shoes</h3>
+                    <p class="meta">Men</p>
+                    <p class="price">PKR 10,990</p>
+                    <div class="swatches"><span class="swatch shoe-brown"></span></div>
+                    <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                </article>
+            </div>
+
+            <div class="col">
+                <article class="product-card">
+                    <a href="product.html"><img src="images/shoe5.jpg" alt="Faux leather shoes"></a>
+                    <h3>Faux Leather Shoes</h3>
+                    <p class="meta">Men</p>
+                    <p class="price">PKR 10,990</p>
+                    <div class="swatches"><span class="swatch shoe-black"></span></div>
+                    <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                </article>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- fall must-haves -->
+
+<section>
+
+    <div class="section-head">
+        <h2>Fall Must-Haves</h2>
+        <p>The styles worth adding to your fall wardrobe.</p>
+    </div>
+
+    <div class="container-fluid px-3 px-md-4 pb-4 pb-md-5">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+
+            <div class="col">
+                <article class="product-card">
+                    <a href="product.html"><img src="images/fall1.webp" alt="Graphic T-shirt"></a>
+                    <h3>Graphic T-Shirt</h3>
+                    <p class="meta">Relaxed Fit | Men</p>
+                    <p class="price">PKR 3,090</p>
+                    <div class="swatches"><span class="swatch olive"></span></div>
+                    <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                </article>
+            </div>
+
+            <div class="col">
+                <article class="product-card">
+                    <a href="product.html"><img src="images/fall2.webp" alt="Slogan print T-shirt"></a>
+                    <h3>Slogan Print T-Shirt</h3>
+                    <p class="meta">Regular Fit | Men</p>
+                    <p class="price">PKR 3,090</p>
+                    <div class="swatches"><span class="swatch charcoal"></span></div>
+                    <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                </article>
+            </div>
+
+            <div class="col">
+                <article class="product-card">
+                    <a href="product.html"><img src="images/fall3.webp" alt="Graphic T-shirt"></a>
+                    <h3>Graphic T-Shirt</h3>
+                    <p class="meta">Boxy Fit | Men</p>
+                    <p class="price">PKR 4,490</p>
+                    <div class="swatches"><span class="swatch rust"></span></div>
+                    <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                </article>
+            </div>
+
+            <div class="col">
+                <article class="product-card">
+                    <a href="product.html"><img src="images/fall4.webp" alt="Crew neck T-shirt"></a>
+                    <h3>Crew Neck T-Shirt</h3>
+                    <p class="meta">Regular Fit | Men</p>
+                    <p class="price">PKR 2,490</p>
+                    <div class="swatches">
+                        <span class="swatch mauve"></span><span class="swatch navy"></span>
+                        <span class="swatch white"></span><span class="swatch grey"></span>
+                    </div>
+                    <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                </article>
+            </div>
+
+            <div class="col">
+                <article class="product-card">
+                    <a href="product.html"><img src="images/fall5.webp" alt="Crew neck T-shirt"></a>
+                    <h3>Crew Neck T-Shirt</h3>
+                    <p class="meta">Regular Fit | Men</p>
+                    <p class="price">PKR 2,890</p>
+                    <div class="swatches">
+                        <span class="swatch white"></span><span class="swatch rust"></span><span class="swatch black"></span>
+                    </div>
+                    <button type="button" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                </article>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- newsletter -->
+
+<section class="newsletter-section">
+    <div class="container-fluid px-4 px-md-5">
+        <div class="row align-items-start">
+
+            <div class="col-12 col-md-4">
+                <h2 class="newsletter-title">BE THE FIRST<br>TO KNOW</h2>
+            </div>
+
+            <div class="col-12 col-md-8">
+                <div class="newsletter-content">
+                    <h3>GET AN UPDATE OF ALL OUR LATEST COLLECTIONS, DISCOUNTS &amp; FEATURES COMING UP</h3>
+
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="ENTER YOUR EMAIL" aria-label="Enter your email">
+                        <button type="button">SIGN ME UP!</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- footer -->
+
+<footer class="site-footer">
+    <div class="container-fluid px-4 px-md-5">
+        <div class="row align-items-center">
+
+            <div class="col-12 col-md-7 footer-logo">
+                <a href="index.html"><img src="images/logo1.png" alt="Outfitters"></a>
+            </div>
+
+            <div class="col-12 col-md-5">
+                <div class="footer-links">
+
+                    <div class="footer-column">
+                        <a href="#">Shopping Guide</a>
+                        <a href="#">Log In/Sign Up</a>
+                        <a href="#">Exchange &amp; Returns</a>
+                        <a href="#">Shipping &amp; Deliveries</a>
+                        <a href="#">How To Buy</a>
+                        <a href="#">Payment</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <a href="#">About Us</a>
+                        <a href="#">Retail Stores</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!-- bootstrap js (needed for the carousel) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
