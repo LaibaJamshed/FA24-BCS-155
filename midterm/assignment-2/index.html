@@ -134,7 +134,23 @@
                 </a>
                 <a href="#" class="nav-icon d-md-none" aria-label="Search"><i class="bi bi-search"></i></a>
                 <a href="#" class="nav-icon" aria-label="Account"><i class="bi bi-person"></i></a>
-                <a href="checkout.html" class="nav-icon" aria-label="Shopping bag"><i class="bi bi-bag"></i></a>
+                <a href="checkout.html" class="nav-icon cart-link" id="cartLink"
+                   aria-label="Shopping bag, 0 items" aria-expanded="false" aria-controls="miniCart">
+                    <i class="bi bi-bag"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+
+                <!-- mini cart -->
+                <div class="mini-cart" id="miniCart" hidden>
+                    <p class="mini-cart-title">Your cart</p>
+                    <p class="mini-cart-empty" id="miniCartEmpty">Your cart is empty.</p>
+                    <ul class="mini-cart-list" id="miniCartList"></ul>
+                    <p class="mini-cart-total">
+                        <span>Total</span>
+                        <strong id="miniCartTotal">PKR 0</strong>
+                    </p>
+                    <a href="checkout.html" class="btn btn-dark btn-sm w-100">Go to checkout</a>
+                </div>
             </div>
 
         </div>
@@ -226,7 +242,7 @@
                 <div class="row row-cols-2 row-cols-md-3 g-3">
 
                     <div class="col">
-                        <article class="product-card">
+                        <article class="product-card" data-id="sweatshirt1">
                             <a href="product.html"><img src="images/sweatshirt1.webp" alt="Black quarter zip sweatshirt"></a>
                             <h3>Quarter Zip Up Sweatshirt</h3>
                             <p class="meta">Regular Fit | Men</p>
@@ -237,7 +253,7 @@
                     </div>
 
                     <div class="col">
-                        <article class="product-card">
+                        <article class="product-card" data-id="sweatshirt2">
                             <a href="product.html"><img src="images/sweatshirt2.webp" alt="Beige quarter zip sweatshirt"></a>
                             <h3>Quarter Zip Up Sweatshirt</h3>
                             <p class="meta">Regular Fit | Men</p>
@@ -248,7 +264,7 @@
                     </div>
 
                     <div class="col">
-                        <article class="product-card">
+                        <article class="product-card" data-id="sweatshirt3">
                             <a href="product.html"><img src="images/sweatshirt3.webp" alt="Dusty mauve quarter zip sweatshirt"></a>
                             <h3>Quarter Zip Up Sweatshirt</h3>
                             <p class="meta">Regular Fit | Men</p>
@@ -259,7 +275,7 @@
                     </div>
 
                     <div class="col">
-                        <article class="product-card">
+                        <article class="product-card" data-id="sweatshirt4">
                             <a href="product.html"><img src="images/sweatshirt4.webp" alt="Brown quarter zip sweatshirt"></a>
                             <h3>Quarter Zip Up Sweatshirt</h3>
                             <p class="meta">Regular Fit | Men</p>
@@ -270,7 +286,7 @@
                     </div>
 
                     <div class="col">
-                        <article class="product-card">
+                        <article class="product-card" data-id="sweatshirt5">
                             <a href="product.html"><img src="images/sweatshirt5.jpg" alt="Beige sweatshirt"></a>
                             <h3>Quarter Zip Up Sweatshirt</h3>
                             <p class="meta">Regular Fit | Men</p>
@@ -281,7 +297,7 @@
                     </div>
 
                     <div class="col">
-                        <article class="product-card">
+                        <article class="product-card" data-id="sweatshirt6">
                             <a href="product.html"><img src="images/sweatshirt6.webp" alt="Grey blue sweatshirt"></a>
                             <h3>Quarter Zip Up Sweatshirt</h3>
                             <p class="meta">Regular Fit | Men</p>
@@ -317,7 +333,7 @@
     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
 
         <div class="col">
-            <article class="product-card">
+            <article class="product-card" data-id="denim1">
                 <a href="product.html"><img src="images/denim1.webp" alt="Balloon fit jeans"></a>
                 <h3>Balloon Fit Jeans</h3>
                 <p class="meta">Balloon Fit | Men</p>
@@ -330,7 +346,7 @@
         </div>
 
         <div class="col">
-            <article class="product-card">
+            <article class="product-card" data-id="denim2">
                 <a href="product.html"><img src="images/denim2.webp" alt="Balloon fit jeans"></a>
                 <h3>Balloon Fit Jeans</h3>
                 <p class="meta">Balloon Fit | Men</p>
@@ -344,7 +360,7 @@
         </div>
 
         <div class="col">
-            <article class="product-card">
+            <article class="product-card" data-id="denim3">
                 <a href="product.html"><img src="images/denim3.webp" alt="Straight fit carpenter jeans"></a>
                 <h3>Straight Fit Carpenter Jeans</h3>
                 <p class="meta">Straight Fit | Men</p>
@@ -357,7 +373,7 @@
         </div>
 
         <div class="col">
-            <article class="product-card">
+            <article class="product-card" data-id="denim-4">
                 <a href="product.html"><img src="images/denim 4.webp" alt="Straight fit carpenter jeans"></a>
                 <h3>Straight Fit Carpenter Jeans</h3>
                 <p class="meta">Straight Fit | Men</p>
@@ -368,7 +384,7 @@
         </div>
 
         <div class="col">
-            <article class="product-card">
+            <article class="product-card" data-id="denim-5">
                 <a href="product.html"><img src="images/denim 5.webp" alt="Straight fit jeans"></a>
                 <h3>Straight Fit Jeans</h3>
                 <p class="meta">Straight Fit | Men</p>
@@ -429,7 +445,7 @@
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
 
             <div class="col">
-                <article class="product-card">
+                <article class="product-card" data-id="shoe1">
                     <a href="product.html"><img src="images/shoe1.webp" alt="Multi-piece sneakers"></a>
                     <h3>Multi-Piece Sneakers</h3>
                     <p class="meta">Men</p>
@@ -440,7 +456,7 @@
             </div>
 
             <div class="col">
-                <article class="product-card">
+                <article class="product-card" data-id="shoe2">
                     <a href="product.html"><img src="images/shoe2.webp" alt="Multi-piece sneakers"></a>
                     <h3>Multi-Piece Sneakers</h3>
                     <p class="meta">Men</p>
@@ -451,7 +467,7 @@
             </div>
 
             <div class="col">
-                <article class="product-card">
+                <article class="product-card" data-id="shoe3">
                     <a href="product.html"><img src="images/shoe3.webp" alt="Casual sneakers"></a>
                     <h3>Casual Sneakers</h3>
                     <p class="meta">Men</p>
@@ -462,7 +478,7 @@
             </div>
 
             <div class="col">
-                <article class="product-card">
+                <article class="product-card" data-id="shoe4">
                     <a href="product.html"><img src="images/shoe4.webp" alt="Suede moc-toe shoes"></a>
                     <h3>Suede Moc-Toe Shoes</h3>
                     <p class="meta">Men</p>
@@ -473,7 +489,7 @@
             </div>
 
             <div class="col">
-                <article class="product-card">
+                <article class="product-card" data-id="shoe5">
                     <a href="product.html"><img src="images/shoe5.jpg" alt="Faux leather shoes"></a>
                     <h3>Faux Leather Shoes</h3>
                     <p class="meta">Men</p>
@@ -502,7 +518,7 @@
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
 
             <div class="col">
-                <article class="product-card">
+                <article class="product-card" data-id="fall1">
                     <a href="product.html"><img src="images/fall1.webp" alt="Graphic T-shirt"></a>
                     <h3>Graphic T-Shirt</h3>
                     <p class="meta">Relaxed Fit | Men</p>
@@ -513,7 +529,7 @@
             </div>
 
             <div class="col">
-                <article class="product-card">
+                <article class="product-card" data-id="fall2">
                     <a href="product.html"><img src="images/fall2.webp" alt="Slogan print T-shirt"></a>
                     <h3>Slogan Print T-Shirt</h3>
                     <p class="meta">Regular Fit | Men</p>
@@ -524,7 +540,7 @@
             </div>
 
             <div class="col">
-                <article class="product-card">
+                <article class="product-card" data-id="fall3">
                     <a href="product.html"><img src="images/fall3.webp" alt="Graphic T-shirt"></a>
                     <h3>Graphic T-Shirt</h3>
                     <p class="meta">Boxy Fit | Men</p>
@@ -535,7 +551,7 @@
             </div>
 
             <div class="col">
-                <article class="product-card">
+                <article class="product-card" data-id="fall4">
                     <a href="product.html"><img src="images/fall4.webp" alt="Crew neck T-shirt"></a>
                     <h3>Crew Neck T-Shirt</h3>
                     <p class="meta">Regular Fit | Men</p>
@@ -549,7 +565,7 @@
             </div>
 
             <div class="col">
-                <article class="product-card">
+                <article class="product-card" data-id="fall5">
                     <a href="product.html"><img src="images/fall5.webp" alt="Crew neck T-shirt"></a>
                     <h3>Crew Neck T-Shirt</h3>
                     <p class="meta">Regular Fit | Men</p>
@@ -630,6 +646,9 @@
 
 <!-- bootstrap js (needed for the carousel) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- cart -->
+<script src="script.js"></script>
 
 </body>
 </html>

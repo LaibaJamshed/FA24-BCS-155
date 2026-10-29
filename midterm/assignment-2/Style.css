@@ -801,3 +801,79 @@ h2 { font-size: 30px; font-weight: 500; }
     .field label { padding-top: 0; }
     .field .error { grid-column: 1; }
 }
+
+
+/* cart badge + mini cart */
+
+.cart-link { position: relative; }
+
+.cart-badge {
+    position: absolute;
+    top: -9px;
+    right: -11px;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    border-radius: 9px;
+    background: #dc3545;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+}
+
+/* hangs off the bottom of the navbar, on the right under the cart icon */
+.mini-cart {
+    position: absolute;
+    top: 100%;
+    right: 4%;
+    z-index: 1;
+    width: 340px;
+    max-width: calc(100vw - 2rem);
+    padding: 18px 20px 20px;
+    background: #fff;
+    color: #111;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.mini-cart-title { margin: 0 0 10px; font-size: 15px; font-weight: 700; }
+
+.mini-cart-empty { margin: 0 0 12px; font-size: 14px; color: #777; }
+
+.mini-cart-list {
+    max-height: 260px;
+    margin: 0 0 12px;
+    padding: 0;
+    overflow-y: auto;
+    list-style: none;
+}
+
+.mini-cart-list li {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 12px;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.mini-cart-list .price { font-weight: 600; white-space: nowrap; }
+
+.mini-cart-list .remove {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: #dc3545;
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.mini-cart-total {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 14px;
+    font-size: 15px;
+}
